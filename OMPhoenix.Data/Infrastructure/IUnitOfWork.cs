@@ -1,0 +1,7 @@
+﻿namespace OMPhoenix.Data.Infrastructure
+{
+    public interface IUnitOfWork
+    {
+        void Commit();
+    }
+}

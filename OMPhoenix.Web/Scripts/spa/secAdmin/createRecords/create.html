@@ -1,0 +1,81 @@
+﻿<div class="row">
+    <form class="form-signin" role="form" novalidate angular-validator name="clientDetailForm" angular-validator-submit="create()">
+        <h4 class="form-signin-heading">Create Students Record</h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="sr-only">Certificate No</label>
+                    <input type="text" id="inputCertificate" name="inputCertificate" class="form-control" ng-model="createObj.studentRecordsVm.CertificateNo" placeholder="Certificate No"
+                           validate-on="blur" required required-message="'Certificate No is required'">
+                </div>
+                <div class="form-group">
+                    <label for="inputName" class="sr-only">Name</label>
+                    <input type="text" id="inputName" name="inputName" class="form-control" ng-model="createObj.studentRecordsVm.FullName" placeholder="Full Name"
+                           validate-on="blur" required required-message="'Full Name is required'">
+                </div>
+                <div class="form-group">
+                    <label for="inputFatherName" class="sr-only">Father Name</label>
+                    <input type="text" id="inputFatherName" name="inputFatherName" class="form-control" ng-model="createObj.studentRecordsVm.FatherName" placeholder="Father Name"
+                           validate-on="blur" required required-message="'Father name is required'">
+                </div>
+                <div class="form-group">
+                    <label for="inputDob" class="sr-only">Date Of Birth</label>
+                    <input type="text" id="inputDob" name="inputDob" class="form-control" ng-model="createObj.studentRecordsVm.DateOfBirth" placeholder="Date Of Birth"
+                           validate-on="blur" required required-message="'Date of birth is required'">
+                </div>
+                <div class="form-group">
+                    <label for="inputDob" class="sr-only">Profile Image</label>
+                    <input type="file" id="fileImage" name="fileImage" class="form-control" ng-file-select="uploadImage($files,'Profile')"
+                           validate-on="blur" required required-message="'Image is required'">
+                </div>
+                <div class="form-group" ng-show="createObj.studentRecordsVm.ProfileImagePath!=undefined">
+                    <div class="previewSec">
+                        <img alt="User Pic"
+                             ng-src="/Images/ProfilePic/{{createObj.studentRecordsVm.ProfileImagePath}}"
+                             class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="inputCourse" class="sr-only">Course</label>
+                    <input type="text" id="inputCourse" name="inputCourse" class="form-control" ng-model="createObj.studentRecordsVm.Course" placeholder="Course"
+                           validate-on="blur" required required-message="'Course is required'">
+                </div>
+                <div class="form-group">
+                    <label for="inputSession" class="sr-only">Session</label>
+                    <input type="text" id="inputSession" name="inputSession" class="form-control" ng-model="createObj.studentRecordsVm.Session" placeholder="Session"
+                           validate-on="blur" required required-message="'Session is required'">
+                </div>
+                <div class="form-group">
+                    <label for="inputGrade" class="sr-only">Grade</label>
+                    <input type="text" id="inputGrade" name="inputGrade" class="form-control" ng-model="createObj.studentRecordsVm.Grade" placeholder="Grade"
+                           validate-on="blur" required required-message="'Grade is required'">
+                </div>
+                <div class="form-group">
+                    <label for="inputCertIssueDate" class="sr-only">Certificate Issue Date</label>
+                    <input type="text" id="inputCertIssueDate" name="inputCertIssueDate" class="form-control" ng-model="createObj.studentRecordsVm.CertificateIssueDate" placeholder="Certificate Issue Date"
+                           validate-on="blur">
+                </div>
+                <div class="form-group">
+                    <label for="inputDob" class="sr-only">Certificate</label>
+                    <input type="file" id="filecertificate" name="filecertificate" class="form-control" ng-file-select="uploadImage($files,'Certificate')"
+                           validate-on="blur">
+                </div>
+                <div class="form-group" ng-show="createObj.studentRecordsVm.CertificateImagePath!=undefined">
+                    <div class="previewSec">
+                        <img alt="User Pic"
+                             ng-src="/Images/ProfilePic/{{createObj.studentRecordsVm.CertificateImagePath}}"
+                             class="img-responsive">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-5"></div>
+            <div class="col-lg-12 text-center">
+                <button class="btn-primary btn-sm" type="submit">Save</button>
+            </div>
+            
+        </div>
+    </form>
+</div>

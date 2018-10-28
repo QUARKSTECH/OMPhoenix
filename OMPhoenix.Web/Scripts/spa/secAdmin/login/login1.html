@@ -1,0 +1,55 @@
+﻿<div class="form-w3ls">
+    <div class="form-head-w3l">
+
+    </div>
+    <ul class="tab-group cl-effect-4">
+        <li class="tab active"><a href="#signin-agile">Sign In</a></li>
+        <li class="tab"><a href="#signup-agile">Sign Up</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="signin-agile">
+            <form class="form-signin login-content " role="form" novalidate angular-validator name="userLoginForm" angular-validator-submit="login()">
+                <p class="header">Employee id</p>
+                <input type="text" name="id" placeholder="Employee id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Employee id';}" required="required">
+
+                <p class="header">User Name</p>
+                <input type="text" name="user" placeholder="User Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Name';}" required="required">
+
+                <p class="header">Password</p>
+                <input type="password" name="password" placeholder="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="required">
+
+                <input type="checkbox" id="brand" value="">
+                <label for="brand"><span></span> Remember me?</label>
+
+                <input type="submit" class="sign-in" value="Sign In">
+            </form>
+        </div>
+        <div id="signup-agile">
+            <form action="signup/machinedetails.html" method="post">
+                <p class="header">Employee id</p>
+                <input type="text" name="id" placeholder="Employee id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Employee id';}" required="required">
+
+                <p class="header">User Name</p>
+                <input type="text" name="user" placeholder="Your Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Full Name';}" required="required">
+
+                <p class="header">Company Name</p>
+                <input type="text" name="company" placeholder="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}" required="required">
+
+                <p class="header">Email Address</p>
+                <input type="email" name="email" placeholder="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="required">
+
+                <p class="header">Mobile number</p>
+                <input type="text" name="mobile" placeholder="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="required">
+
+
+                <p class="header">Password</p>
+                <input type="password" name="password" placeholder="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="required">
+
+                <p class="header">Confirm Password</p>
+                <input type="password" name="password" placeholder="Confirm Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Confirm Password';}" required="required">
+
+                <input type="submit" class="register" value="Sign up">
+            </form>
+        </div>
+    </div><!-- tab-content -->
+</div>

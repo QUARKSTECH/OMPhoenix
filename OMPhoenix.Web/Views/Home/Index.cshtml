@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="secAdmin">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM Phoenix</title>
+    @System.Web.Optimization.Styles.Render("~/Content/css")
+    @System.Web.Optimization.Scripts.Render("~/bundles/modernizr")
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
+    <link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" rel='stylesheet' type='text/css'>
+    
+</head>
+<body ng-controller="rootCtrl">
+    <ng-view></ng-view>
+    @*<top-bar></top-bar>
+        <div class="row-offcanvas row-offcanvas-left">
+            <side-bar></side-bar>
+            <div id="main">
+                <div class="col-md-12">
+                    <p class="visible-xs">
+                        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                    </p>
+                    <div class="page {{ pageClass }}" ng-view></div>
+                </div>
+            </div>
+        </div>*@<!--/row-offcanvas -->
+    @System.Web.Optimization.Scripts.Render("~/bundles/vendors")
+    @System.Web.Optimization.Scripts.Render("~/bundles/spa")
+
+
+    <script src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js'></script>
+    <script src='https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js'></script>
+
+</body>
+</html>

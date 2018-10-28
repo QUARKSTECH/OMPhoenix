@@ -1,0 +1,19 @@
+﻿<div class="row">
+    <form class="form-signin login-content " role="form" novalidate angular-validator name="userLoginForm" angular-validator-submit="login()">
+        <h3 class="form-signin-heading">Sign in</h3>
+        <div class="form-group">
+            <label for="inputUsername" class="sr-only">Username</label>
+            <input type="text" id="inputUsername" name="inputUsername" class="form-control" ng-model="user.username" placeholder="Username"
+                   validate-on="blur" required required-message="'Username is required'">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" name="inputPassword" class="form-control" ng-model="user.password" placeholder="Password"
+                   validate-on="blur" required required-message="'Password is required'">
+        </div>
+        <button class="btn btn-sm btn-primary" type="submit">Sign in</button>
+        <!--<div class="register_link">
+            <a ng-href="#/register" class="control-label">Register</a>
+        </div>-->
+    </form>
+</div>
