@@ -61,4 +61,4 @@
         loadData();
     }
 
-})(angular.module('secAdmin'));
+})(angular.module('oMPhoenix'));

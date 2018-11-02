@@ -31,4 +31,4 @@
     }
     
 
-})(angular.module('secAdmin'));
+})(angular.module('oMPhoenix'));

@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    angular.module('secAdmin', ['common.core', 'common.ui'])
+    angular.module('oMPhoenix', ['common.core', 'common.ui'])
         .config(config)
         .run(run);
 
@@ -9,19 +9,19 @@
     function config($routeProvider, $locationProvider) {
         $routeProvider
             .when("/", {
-                templateUrl: "scripts/spa/secAdmin/admin/adminLogin.html",
+                templateUrl: "scripts/spa/oMPhoenix/admin/adminLogin.html",
                 controller: "adminLoginCtrl"
             })
             .when("/adminindex", {
-                templateUrl: "scripts/spa/secAdmin/admin/adminIndex.html",
+                templateUrl: "scripts/spa/oMPhoenix/admin/adminIndex.html",
                 controller: "adminIndexCtrl"
             })
             .when("/addentry/:id?", {
-                templateUrl: "scripts/spa/secAdmin/admin/addDetails.html",
+                templateUrl: "scripts/spa/oMPhoenix/admin/addDetails.html",
                 controller: "addDetailsCtrl"
             })
             .when("/viewentry", {
-                templateUrl: "scripts/spa/secAdmin/admin/viewDetails.html",
+                templateUrl: "scripts/spa/oMPhoenix/admin/viewDetails.html",
                 controller: "viewDetailsCtrl"
             })
             .otherwise({ redirectTo: "#/" });

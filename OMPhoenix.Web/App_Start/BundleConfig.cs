@@ -49,16 +49,16 @@ namespace OMPhoenix.Web
                 "~/Scripts/spa/layout/customPager.directive.js",
                 "~/Scripts/spa/directives/rating.directive.js",
                 "~/Scripts/spa/directives/availableMovie.directive.js",
-                "~/Scripts/spa/secAdmin/login/loginCtrl.js",
+                //"~/Scripts/spa/secAdmin/login/loginCtrl.js",
                 "~/Scripts/spa/account/registerCtrl.js",
                 "~/Scripts/spa/home/rootCtrl.js",
                 "~/Scripts/spa/home/indexCtrl.js",
-                "~/scripts/spa/secAdmin/clientList/clientListCtrl.js",
-                "~/scripts/spa/secAdmin/createRecords/createCtrl.js",
-                "~/scripts/spa/secAdmin/admin/adminLoginCtrl.js",
-                "~/scripts/spa/secAdmin/admin/adminIndexCtrl.js",
-                "~/scripts/spa/secAdmin/admin/addDetailsCtrl.js",
-                "~/scripts/spa/secAdmin/admin/viewDetailsCtrl.js"
+                //"~/scripts/spa/oMPhoenix/clientList/clientListCtrl.js",
+                //"~/scripts/spa/oMPhoenix/createRecords/createCtrl.js",
+                "~/scripts/spa/oMPhoenix/admin/adminLoginCtrl.js",
+                "~/scripts/spa/oMPhoenix/admin/adminIndexCtrl.js",
+                "~/scripts/spa/oMPhoenix/admin/addDetailsCtrl.js",
+                "~/scripts/spa/oMPhoenix/admin/viewDetailsCtrl.js"
                 ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(

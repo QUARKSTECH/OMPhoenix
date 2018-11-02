@@ -30,4 +30,4 @@
         $scope.userData.displayUserInfo();
     }
 
-})(angular.module('secAdmin'));
+})(angular.module('oMPhoenix'));
