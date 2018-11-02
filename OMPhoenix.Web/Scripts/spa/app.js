@@ -17,16 +17,12 @@
                 controller: "adminIndexCtrl"
             })
             .when("/addentry/:id?", {
-                templateUrl: "scripts/spa/secAdmin/createRecords/addDetails.html",
+                templateUrl: "scripts/spa/secAdmin/admin/addDetails.html",
                 controller: "addDetailsCtrl"
             })
-            .when("/create/:id?", {
-                templateUrl: "scripts/spa/secAdmin/createRecords/create.html",
-                controller: "createCtrl"
-            })
-            .when("/clientlist", {
-                templateUrl: "scripts/spa/secAdmin/clientList/request.html",
-                controller: "clientListCtrl"
+            .when("/viewentry", {
+                templateUrl: "scripts/spa/secAdmin/admin/viewDetails.html",
+                controller: "viewDetailsCtrl"
             })
             .otherwise({ redirectTo: "#/" });
 

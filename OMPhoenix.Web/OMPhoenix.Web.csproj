@@ -173,13 +173,13 @@
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\jquery.fancybox.css" />
     <Content Include="Content\css\loading-bar.css" />
+    <Content Include="Content\images\logo.png" />
     <Content Include="Content\css\magnific-popup.css" />
     <Content Include="Content\css\morris.css" />
     <Content Include="Content\css\nice-select.css" />
     <Content Include="Content\css\owl.carousel.min.css" />
     <Content Include="Content\css\site.css" />
     <Content Include="Content\css\style.css" />
-    <Content Include="Content\css\styleaddData.css" />
     <Content Include="Content\css\toastr.css" />
     <Content Include="Content\css\travel-icon.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
@@ -195,6 +195,7 @@
     <Content Include="Content\images\im3.jpg" />
     <Content Include="Content\images\im4.jpg" />
     <Content Include="Content\images\images.jpg" />
+    <Content Include="Content\images\into.png" />
     <Content Include="Content\images\movies\antman.jpg" />
     <Content Include="Content\images\movies\background.jpg" />
     <Content Include="Content\images\movies\batmanvssuperman.jpg" />
@@ -250,8 +251,10 @@
     <Content Include="Scripts\spa\secAdmin\admin\adminLogin.html" />
     <Content Include="Scripts\spa\secAdmin\admin\adminLoginCtrl.js" />
     <Content Include="Scripts\spa\secAdmin\clientList\request.html" />
-    <Content Include="Scripts\spa\secAdmin\createRecords\addDetails.html" />
-    <Content Include="Scripts\spa\secAdmin\createRecords\addDetailsCtrl.js" />
+    <Content Include="Scripts\spa\secAdmin\admin\viewDetails.html" />
+    <Content Include="Scripts\spa\secAdmin\admin\viewDetailsCtrl.js" />
+    <Content Include="Scripts\spa\secAdmin\admin\addDetails.html" />
+    <Content Include="Scripts\spa\secAdmin\admin\addDetailsCtrl.js" />
     <Content Include="Scripts\spa\secAdmin\login\login1.html" />
     <Content Include="Scripts\spa\home\rootCtrl.js" />
     <Content Include="Scripts\spa\layout\customPager.directive.js" />

@@ -56,20 +56,26 @@ namespace OMPhoenix.Web
                 "~/scripts/spa/secAdmin/clientList/clientListCtrl.js",
                 "~/scripts/spa/secAdmin/createRecords/createCtrl.js",
                 "~/scripts/spa/secAdmin/admin/adminLoginCtrl.js",
-                "~/scripts/spa/secAdmin/admin/adminIndexCtrl.js"
+                "~/scripts/spa/secAdmin/admin/adminIndexCtrl.js",
+                "~/scripts/spa/secAdmin/admin/addDetailsCtrl.js",
+                "~/scripts/spa/secAdmin/admin/viewDetailsCtrl.js"
                 ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                "~/content/css/style.css",
-                "~/content/css/styleaddData.css",
-                "~/content/css/owl.carousel.min.css",
-                "~/content/css/bootstrap.css",
-                "~/content/css/bootstrap-theme.css",
-                 "~/content/css/font-awesome.css",
-                "~/content/css/morris.css",
+                "~/Content/css/style.css",
+                "~/Content/css/classy-nav.css",
+                "~/Content/css/bootstrap.min.css",
+                "~/Content/css/bootstrap-theme.css",
+                "~/Content/css/font-awesome.min.css",
+                "~/Content/css/morris.css",
                 "~/content/css/toastr.css",
-                "~/content/css/jquery.fancybox.css",
-                "~/content/css/loading-bar.css"));
+                "~/Content/css/jquery.fancybox.css",
+                "~/Content/css/loading-bar.css",
+                "~/Content/css/magnific-popup.css",
+                "~/Content/css/nice-select.css",
+                "~/Content/css/travel-icon.css",
+                "~/Content/css/animate.css",
+                "~/Content/css/owl.carousel.min.css"));
 
             BundleTable.EnableOptimizations = false;
         }

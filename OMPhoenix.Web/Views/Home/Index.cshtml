@@ -9,11 +9,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OM Phoenix</title>
+    <!-- Favicon -->
+    <link rel="icon" href="~/Content/images/logo.png">
     @System.Web.Optimization.Styles.Render("~/Content/css")
     @System.Web.Optimization.Scripts.Render("~/bundles/modernizr")
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
+    @*<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel='stylesheet' type='text/css'>*@
     <link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" rel='stylesheet' type='text/css'>
-    
+
 </head>
 <body ng-controller="rootCtrl">
     <ng-view></ng-view>
