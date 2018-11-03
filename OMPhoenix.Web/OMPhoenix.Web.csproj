@@ -238,6 +238,8 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Areas\ClientDetail\Views\web.config" />
     <Content Include="Areas\FileUpload\Views\web.config" />
+    <Content Include="Areas\Customer\Views\web.config" />
+    <Content Include="Areas\Machine\Views\web.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -312,8 +314,12 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\ClientDetail\ClientDetailAreaRegistration.cs" />
     <Compile Include="Areas\ClientDetail\Controllers\ClientDetailController.cs" />
+    <Compile Include="Areas\Customer\Controllers\CustomerController.cs" />
+    <Compile Include="Areas\Customer\CustomerAreaRegistration.cs" />
     <Compile Include="Areas\FileUpload\Controllers\FileUploadController.cs" />
     <Compile Include="Areas\FileUpload\FileUploadAreaRegistration.cs" />
+    <Compile Include="Areas\Machine\Controllers\MachineController.cs" />
+    <Compile Include="Areas\Machine\MachineAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -345,8 +351,13 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\ClientDetail\Models\" />
     <Folder Include="Areas\ClientDetail\Views\Shared\" />
+    <Folder Include="Areas\Customer\Models\" />
+    <Folder Include="Areas\Customer\Views\Customer\" />
+    <Folder Include="Areas\Customer\Views\Shared\" />
     <Folder Include="Areas\FileUpload\Models\" />
     <Folder Include="Areas\FileUpload\Views\Shared\" />
+    <Folder Include="Areas\Machine\Models\" />
+    <Folder Include="Areas\Machine\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

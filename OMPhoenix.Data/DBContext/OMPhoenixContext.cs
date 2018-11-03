@@ -11,13 +11,15 @@ namespace OMPhoenix.Data
         public OMPhoenixContext()
             : base("OMPhoenix")
         {
-            Database.SetInitializer<OMPhoenixContext>(null);
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<OMPhoenixContext, Migrations.Configuration>());
         }
 
         #region Entity Sets
         public IDbSet<User> UserSet { get; set; }
         public IDbSet<Role> RoleSet { get; set; }
         public IDbSet<UserRole> UserRoleSet { get; set; }
+        public IDbSet<Machine> MachineSet { get; set; }
+        public IDbSet<Customer> CustomerSet { get; set; }
 
         #endregion
 
@@ -30,9 +32,8 @@ namespace OMPhoenix.Data
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.Configurations.Add(new UserConfiguration());
-            //modelBuilder.Configurations.Add(new UserRoleConfiguration());
-            //modelBuilder.Configurations.Add(new RoleConfiguration());
-            modelBuilder.Configurations.Add(new ClientDetailConfiguration());
+            modelBuilder.Configurations.Add(new CustomerConfiguration());
+            modelBuilder.Configurations.Add(new MachineConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

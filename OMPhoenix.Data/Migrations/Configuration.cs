@@ -8,7 +8,7 @@ namespace OMPhoenix.Data.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(OMPhoenixContext context)
@@ -17,6 +17,10 @@ namespace OMPhoenix.Data.Migrations
             context.UserSet.AddOrUpdate(GenerateAdminUser());
             // create roles
             context.RoleSet.AddOrUpdate(GenerateRoles());
+            // create Machine
+            context.MachineSet.AddOrUpdate(GenerateMachine());
+            // create Customer
+            context.CustomerSet.AddOrUpdate(GenerateCustomer());
           
 
         }
@@ -98,7 +102,86 @@ namespace OMPhoenix.Data.Migrations
         }
 
         #endregion
-        
+
+        #region:Generate Mchine Data
+        private Machine[] GenerateMachine()
+        {
+            var machine = new Machine[]{
+                new Machine()
+                {
+                    MachineModel="Mac-1",
+                    SerialNo="9518",
+                    RunningHours="01:32:50",
+                    CurrentLoadingHours = "01:32:50",
+                    IsDeleted =false,
+                    CreatedDate=DateTime.UtcNow,
+                    ModifiedDate=DateTime.UtcNow
+                },
+                new Machine()
+                {
+                    MachineModel="Mac-2",
+                    SerialNo="7326",
+                    RunningHours="00:51:22",
+                    CurrentLoadingHours = "01:32:50",
+                    IsDeleted =false,
+                    CreatedDate=DateTime.UtcNow,
+                    ModifiedDate=DateTime.UtcNow
+                },
+                new Machine()
+                {
+                    MachineModel="Mac-3",
+                    SerialNo="4162",
+                    RunningHours="00:24:34",
+                    CurrentLoadingHours = "01:32:50",
+                    IsDeleted =false,
+                    CreatedDate=DateTime.UtcNow,
+                    ModifiedDate=DateTime.UtcNow
+                }
+            };
+
+            return machine;
+        }
+        #endregion
+
+        #region:Generate Customer Data
+        private Customer[] GenerateCustomer()
+        {
+            var customer = new Customer[]{
+                new Customer()
+                {
+                    Name="Carolina Biggleswade",
+                    CompanyName="INFO SOFT",
+                    Email="caroline@bigg.com",
+                    MobileNumber = "1234567890",
+                    IsDeleted =false,
+                    CreatedDate=DateTime.UtcNow,
+                    ModifiedDate=DateTime.UtcNow
+                },
+                new Customer()
+                {
+                    Name="Tom jones",
+                    CompanyName="INFO SOFT",
+                    Email="Tom@bigg.com",
+                    MobileNumber = "4567890987",
+                    IsDeleted =false,
+                    CreatedDate=DateTime.UtcNow,
+                    ModifiedDate=DateTime.UtcNow
+                },
+                new Customer()
+                {
+                    Name="Roma Biggleswade",
+                    CompanyName="INFO SOFT",
+                    Email="Roma@bigg.com",
+                    MobileNumber = "7654367809",
+                    IsDeleted =false,
+                    CreatedDate=DateTime.UtcNow,
+                    ModifiedDate=DateTime.UtcNow
+                }
+            };
+
+            return customer;
+        }
+        #endregion
     }
 }
 

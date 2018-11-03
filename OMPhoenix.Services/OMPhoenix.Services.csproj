@@ -54,9 +54,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IClientDataService.cs" />
+    <Compile Include="Abstract\ICustomerService.cs" />
+    <Compile Include="Abstract\IMachineService.cs" />
     <Compile Include="ClientDataService.cs" />
     <Compile Include="Abstract\IFileUploadService.cs" />
+    <Compile Include="CustomerService.cs" />
     <Compile Include="FileUploadService.cs" />
+    <Compile Include="MachineService.cs" />
     <Compile Include="UploadImageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
