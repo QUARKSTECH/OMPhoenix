@@ -1514,7 +1514,7 @@
     <div class="hero">
 
         <h1><span>Welcome</span><br>Admin Login</h1>
-        <a href="#section05"><span></span></a>
+        <a href="" id="section005"><span></span></a>
     </div>
 </section>
 
@@ -1528,14 +1528,14 @@
                 <input class="text" type="text" name="Username" placeholder="Username" id="Username" required="" ng-model="user.username">
                 <input class="text email" type="email" name="email" placeholder="Email" required="">
                 <input class="text" type="password" name="password" placeholder="Password" required="" id="password" ng-model="user.password">
-                <input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
+                <input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" ng-model="user.password" required="">
                 <div class="wthree-text">
 
                     <div class="clear"> </div>
                 </div>
                 <input type="submit" value="signin" id="submit">
             </form>
-            <p>Forgot Password<a href="#"> Login Now!</a></p>
+            <p>Forgot Password<a href=""> Login Now!</a></p>
         </div>
     </div>
     <ul class="colorlib-bubbles">
@@ -1551,3 +1551,10 @@
         <li></li>
     </ul>
 </div>
+<script>
+    $("#section005").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#section05").offset().top
+        }, 500);
+    });
+</script>

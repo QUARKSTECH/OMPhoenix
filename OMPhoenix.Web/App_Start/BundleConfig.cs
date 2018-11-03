@@ -74,8 +74,7 @@ namespace OMPhoenix.Web
                 "~/Content/css/magnific-popup.css",
                 "~/Content/css/nice-select.css",
                 "~/Content/css/travel-icon.css",
-                "~/Content/css/animate.css",
-                "~/Content/css/owl.carousel.min.css"));
+                "~/Content/css/animate.css"));
 
             BundleTable.EnableOptimizations = false;
         }

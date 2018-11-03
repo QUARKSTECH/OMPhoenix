@@ -1,9 +1,9 @@
 ﻿<div class="form">
 
     <ul class="tab-group">
-        <li class="tab active"><a href="#login">Customer Detail</a></li>
+        <li class="tab active"><a href="" ng-click="switchTab('customer')">Customer Detail</a></li>
 
-        <li class="tab"><a href="#signup">Machine Detail</a></li>
+        <li class="tab"><a href="" ng-click="switchTab('machine')">Machine Detail</a></li>
     </ul>
 
 
@@ -12,7 +12,7 @@
     <div class="tab-content">
 
 
-        <div id="login">
+        <div id="customer">
 
 
             <h1> <span class="yellow"></span></h1>
@@ -40,36 +40,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>01</td>
-                        <td>Carolina Biggleswade</td>
-                        <td>INFO SOFT</td>
-                        <td>CAROLINE@BIGG.COM</td>
-                        <td>1234567890</td>
-
-
-                    </tr>
-                    <tr>
-                        <td>02</td>
-                        <td>Tom jones</td>
-                        <td>INFO SOFT</td>
-                        <td>CAROLINE@BIGG.COM</td>
-                        <td>1234567890</td>
-
-                    </tr>
-                    <tr>
-                        <td>03</td>
-                        <td>Roma Biggleswade</td>
-                        <td>INFO SOFT</td>
-                        <td>CAROLINE@BIGG.COM</td>
-                        <td>1234567890</td>
-
+                    <tr ng-repeat="customer in entityListVm.customerList">
+                        <td>{{customer.CustomerId}}</td>
+                        <td>{{customer.Name}}</td>
+                        <td>{{customer.CompanyName}}</td>
+                        <td>{{customer.Email}}</td>
+                        <td>{{customer.MobileNumber}}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <div id="signup">
+        <div id="machine">
 
             <h1> <span class="yellow"></span></h1>
 
@@ -90,31 +72,17 @@
                             <h1>Running hour</h1>
                         </th>
                         <th>
-                            <h1>current loading time</h1>
+                            <h1>Loading time</h1>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Mac-1</td>
-                        <td>9518</td>
-                        <td>6369</td>
-                        <td>01:32:50</td>
-                        <td>01:32:50</td>
-                    </tr>
-                    <tr>
-                        <td>Mac-2</td>
-                        <td>7326</td>
-                        <td>10437</td>
-                        <td>00:51:22</td>
-                        <td>01:32:50</td>
-                    </tr>
-                    <tr>
-                        <td>Mac-3</td>
-                        <td>4162</td>
-                        <td>5327</td>
-                        <td>00:24:34</td>
-                        <td>01:32:50</td>
+                    <tr ng-repeat="machine in entityListVm.machineList">
+                        <td>{{machine.MachineId}}</td>
+                        <td>{{machine.MachineModel}}</td>
+                        <td>{{machine.SerialNo}}</td>
+                        <td>{{machine.RunningHours}}</td>
+                        <td>{{machine.CurrentLoadingHours}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -123,5 +91,8 @@
 
 
 
+    </div>
+    <div class="menu-btn center">
+        <a class="btn palatin-btn" href="#/addentry">Add Data</a>
     </div>
 </div>

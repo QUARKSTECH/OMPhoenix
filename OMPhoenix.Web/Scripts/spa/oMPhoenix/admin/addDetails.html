@@ -1,112 +1,65 @@
 ﻿<div class="layer">
-    <!---728x90--->
-
     <h1>Add Customers</h1>
     <div class="main-agile1">
         <div class="w3layouts-main">
-            <!---728x90--->
-
-            <h2>Basic Details</h2>
-
-
-
-            <form action="edit.html" method="post">
-
-
+            <h2>Customer Details</h2>
+            <form class="form-customer" role="form" novalidate angular-validator name="customerForm" angular-validator-submit="addCustomer()">
+                <!--<div class="email">
+                <input type="text" placeholder="Employee ID" name="employee id" ng-model="" autocomplete="off" ng-disabled="true">
+            </div>-->
                 <div class="email">
-                    <input type="text" placeholder="Employee ID" name="employee id" autocomplete="off">
-
-
-                </div>
-                <div class="email">
-
-                    <input type="text" placeholder="User Name" name="username" autocomplete="off">
-
-
+                    <input type="text" placeholder="User Name" name="username" ng-model="addEntity.customerRecordsVm.Name" autocomplete="off" validate-on="blur" required required-message="'Name is required'">
                 </div>
 
                 <div class="email">
-
-                    <input type="text" placeholder="company Name" name="company name" autocomplete="off">
-                </div>
-
-
-                <div class="email">
-
-                    <input type="text" placeholder="Email Address" name="email address" autocomplete="off">
-
-
+                    <input type="text" placeholder="company Name" name="company name" ng-model="addEntity.customerRecordsVm.CompanyName" autocomplete="off" validate-on="blur" required required-message="'Company is required'">
                 </div>
 
                 <div class="email">
-
-                    <input type="text" placeholder="Mobile number" name="Mobile number" autocomplete="off">
+                    <input type="text" placeholder="Email Address" name="email address" ng-model="addEntity.customerRecordsVm.Email" autocomplete="off" validate-on="blur" required required-message="'Email is required'">
                 </div>
 
-
-                <input type="submit" value="submit" name="login" id="submit1" autocomplete="off">
+                <div class="email">
+                    <input type="text" placeholder="Mobile number" name="Mobile number" ng-model="addEntity.customerRecordsVm.MobileNumber" autocomplete="off" validate-on="blur" required required-message="'Mobile is required'">
+                </div>
+                <input type="submit" value="submit" name="login" id="submit1">
             </form>
         </div>
         <div class="main-agile" style="padding:50px 0;">
-            <!--<div class="w3layouts-main">-->
-
             <div class="alert-close" id="close"> </div>
-
-            <!--<div class="content-wthree">-->
-
             <h2>Machine Details</h2>
-
-            <form action="edit.html" method="post">
+            <form class="form-machine" role="form" novalidate angular-validator name="machineForm" angular-validator-submit="addMachine()">
+                <!--<div class="email">
+                <input class="input--style-3" type="text" placeholder="Employee id" autocomplete="off" name="current loading hours"
+                       style="color:black;font-size:15px;" ng-disabled="true">
+            </div>-->
                 <div class="email">
-                    <input class="input--style-3" type="text" placeholder="Employee id" autocomplete="off" name="current loading hours"
-                           style="color:black;font-size:15px;">
-                </div>
-
-                <div class="email">
-
                     <input class="input--style-3" type="text" placeholder="Machine Model" name="name" style="color:black;font-size:15px;"
-                           autocomplete="off">
-
+                           ng-model="addEntity.machineRecordsVm.MachineModel" autocomplete="off" validate-on="blur" required required-message="'Machine model is required'">
                 </div>
 
-
-
                 <div class="email">
-
                     <input class="input--style-3" type="text" placeholder="Sl.No." name="slno" style="color:black;font-size:15px;"
-                           autocomplete="off">
-
+                           ng-model="addEntity.machineRecordsVm.SerialNo" autocomplete="off" validate-on="blur" required required-message="'SerialNo is required'">
                 </div>
-
 
                 <div class="email">
-
-                    <input class="input--style-3" type="text" placeholder="Running Hour" autocomplete="off" name="running hour"
-                           style="color:black;font-size:15px;">
-
+                    <input class="input--style-3" type="text" placeholder="Running Hour" name="running hour" style="color:black;font-size:15px;"
+                           ng-model="addEntity.machineRecordsVm.RunningHours" autocomplete="off" validate-on="blur" required required-message="'Running hours is required'">
                 </div>
-
 
                 <div class="email">
-                    <input class="input--style-3" type="text" autocomplete="off" placeholder="Current loading hours" autocomplete="off"
-                           name="current loading hours" style="color:black;font-size:15px;">
+                    <input class="input--style-3" type="text" placeholder="Current loading hours" name="current loading hours" style="color:black;font-size:15px;"
+                           ng-model="addEntity.machineRecordsVm.CurrentLoadingHours" autocomplete="off" validate-on="blur" required required-message="'Current loading hours is required'">
                 </div>
-
-
-
-
-
                 <input type="submit" value="Submit">
             </form>
         </div>
-
-
-
-
-
         <div class="clear"></div>
+        <div class="menu-btn center">
+            <a class="btn palatin-btn" href="#/viewentry">View Data</a>
+        </div>
     </div>
-
 
     <script>
 

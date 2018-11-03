@@ -19,8 +19,11 @@ namespace OMPhoenix.Web.Mapping
             //Mapper.CreateMap<Prospect, ProspectViewModel>()
             //    .ForMember(vm => vm.ID, map => map.MapFrom(m => m.Tract.ID)) //For Reference
 
-            CreateMap<ClientDetailViewModel, ClientDetail>();
-            CreateMap<ClientDetailViewModel, ClientDetail>().ReverseMap();
+            CreateMap<CustomerViewModel, Customer>();
+            CreateMap<CustomerViewModel, Customer>().ReverseMap();
+
+            CreateMap<MachineViewModel, Machine>();
+            CreateMap<MachineViewModel, Machine>().ReverseMap();
 
         }
     }

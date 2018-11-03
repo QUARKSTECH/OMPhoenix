@@ -11,7 +11,7 @@ namespace OMPhoenix.ViewModel
         public ResponseViewModel()
         {
             status = 0;
-            message = Constants.Error;
+            message = string.Empty;
         }
         public string message { get; set; }
         public object responseData { get; set; }

@@ -14,15 +14,13 @@ namespace OMPhoenix.Data.Migrations
         protected override void Seed(OMPhoenixContext context)
         {
             //// create users
-            context.UserSet.AddOrUpdate(GenerateAdminUser());
-            // create roles
-            context.RoleSet.AddOrUpdate(GenerateRoles());
-            // create Machine
-            context.MachineSet.AddOrUpdate(GenerateMachine());
-            // create Customer
-            context.CustomerSet.AddOrUpdate(GenerateCustomer());
-          
-
+            //context.UserSet.AddOrUpdate(GenerateAdminUser());
+            //// create roles
+            //context.RoleSet.AddOrUpdate(GenerateRoles());
+            //// create Machine
+            //context.MachineSet.AddOrUpdate(GenerateMachine());
+            //// create Customer
+            //context.CustomerSet.AddOrUpdate(GenerateCustomer());
         }
         private Role[] GenerateRoles()
         {
